@@ -2,9 +2,14 @@ import 'package:cadastro_de_contatos/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import '../components/user_tile.dart';
 
-class homePage extends StatelessWidget {
+class homePage extends StatefulWidget {
   homePage({ Key? key }) : super(key: key);
 
+  @override
+  State<homePage> createState() => _homePageState();
+}
+
+class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
